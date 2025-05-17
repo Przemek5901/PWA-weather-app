@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formularz</title>
+    <link rel="stylesheet" href="css/base-style.css" />
+    <link rel="stylesheet" href="css/form-style.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <header class="logo-header">
+      <img src="assets/logo-small.png" alt="Logo" class="logo" />
+    </header>
+    <h2>Kronika pogodowa</h2>
+
+    <form id="weatherForm" class="form">
+      <label>
+        Dzień:
+        <input type="date" name="day" required />
+      </label>
+      <label>
+        Temperatura:
+        <input type="text" name="temperature" required />
+      </label>
+      <label>
+        Opis pogody:
+        <input type="weatherDesc" name="weatherDesc" required />
+      </label>
+      <button type="submit">Zapisz</button>
+    </form>
+
+    <h3>Zapisane dane:</h3>
+    <ul id="weatherList" class="weather-list"></ul>
+    <h3 id="emptyWeatherList" class="empty-weather-list"></h3>
+
+    <script src="js/db.js"></script>
+  </body>
+</html>

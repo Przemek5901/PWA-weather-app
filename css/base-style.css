@@ -1,0 +1,40 @@
+:root {
+  --orange: #e08e4c;
+  --light-orange: #f5be91;
+  --grey: #495672;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 2em;
+  max-width: 600px;
+  width: 600px;
+  margin: auto;
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.logo-header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+button {
+  background-color: var(--orange);
+  border: none;
+  padding: 0.75em;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+}
+
+button:hover {
+  background-color: var(--light-orange);
+}

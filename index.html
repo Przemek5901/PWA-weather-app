@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Strona Główna</title>
+    <link rel="stylesheet" href="css/index-style.css" />
+    <link rel="stylesheet" href="css/base-style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="assets/logo-small.png" />
+  </head>
+  <body>
+    <header class="logo-header">
+      <img src="assets/logo-small.png" alt="Logo" class="logo" />
+    </header>
+    <div class="main-container">
+      <h1>Witaj w aplikacji pogodowej PWA</h1>
+      <div class="button-container">
+        <button onclick="location.href='form.html'" type="button">
+          Formularz
+        </button>
+        <button onclick="location.href='api.html'" type="button">
+          Dane z API
+        </button>
+      </div>
+    </div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("sw.js")
+          .then(() => console.log("Service Worker zarejestrowany"));
+      }
+    </script>
+  </body>
+</html>
